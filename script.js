@@ -56,7 +56,7 @@ registerForm.addEventListener('submit', async function (e) {
       const data  = {"name":name,"email":email,"password":password}
 
 
-        const request = await fetch('https://concerned-long-johns-newt.cyclic.app/register', {
+        const request = await fetch('https://travelagency.cyclic.app/register', {
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'
@@ -95,7 +95,7 @@ loginForm.addEventListener('submit', async function(e) {
       const data  = {"email":email,"password":password}
 
 
-        const request = await fetch('https://concerned-long-johns-newt.cyclic.app/login', {
+        const request = await fetch('https://travelagency.cyclic.app/login', {
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'
