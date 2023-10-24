@@ -78,11 +78,11 @@
 			</form>
 
 
-			<form action="" class="register">
+			<form action="" class="register" encType="multipart/form-data">
 				<h3>Register</h3>
-				<input type="text" class="box" id="name" placeholder="enter your name" />
-				<input type="email" class="box" id="email" placeholder="enter your email" />
-				<input type="password" class="box" id="password" placeholder="enter your password" />
+				<input type="text" class="box" name="name" id="name" placeholder="enter your name" />
+				<input type="email" class="box" name="email" id="email" placeholder="enter your email" />
+				<input type="password" class="box" name="password" id="password" placeholder="enter your password" />
 				<input type="submit" value="register Now" class="btn" />
 
 				<p>already have account?<a href="#" onclick="login()">Login now</a></p>
@@ -110,6 +110,7 @@
 
 		<div class="video-container">
 			<video src="location-2.mp4" id="video-slider" loop autoplay muted></video>
+			<!-- <img src="image & video/travel_wallpaper.avif" alt=""> -->
 		</div>
 	</section>
 
@@ -134,25 +135,29 @@
 				<img src="image & video/road trip0611.webp" alt="">
 			</div>
 
-			<form action="">
+			<form action="" id="bookNowForm">
 				<div class="padd">
 					<div class="inputbox">
+						<h3>from</h3>
+						<input type="text" id="from" placeholder="place name">
+					</div>
+					<div class="inputbox">
 						<h3>where to</h3>
-						<input type="text" placeholder="place name">
+						<input type="text" id="whereTo" placeholder="place name">
 					</div>
 					<div class="inputbox">
 						<h3>how many</h3>
-						<input type="number" placeholder="how many">
+						<input type="number" id="howMany" placeholder="how many">
 					</div>
 					<div class="inputbox">
 						<h3>arrivals</h3>
-						<input type="date">
+						<input type="date" id="arrivals">
 					</div>
 					<div class="inputbox">
 						<h3>leaving</h3>
-						<input type="date">
+						<input type="date" id="leaving">
 					</div>
-					<input type="submit" class="btn" value="book now">
+					<input type="submit"  class="btn" value="book now">
 				</div>
 			</form>
 		</div>
@@ -441,19 +446,19 @@
 			<span>U</span>
 			<span>s</span>
 		</h1>
-		<form action="">
+		<form action="" id="sentMessageForm">
 			<div class="padd">
-				<div class="inputbox">
+				<div class="inputbox" >
 					<h3>Name</h3>
-					<input type="text">
+					<input type="text" id="mname">
 				</div>
 				<div class="inputbox">
 					<h3>Email</h3>
-					<input type="email">
+					<input type="email" id="memail">
 				</div>
 				<div class="inputbox">
 					<h3>Message</h3>
-					<textarea name="" id="" cols="40" rows="5"></textarea>
+					<textarea name="message"  cols="40" rows="5" id="textareaMessage"></textarea>
 				</div>
 				<input type="submit" class="btn" value="Submit">
 			</div>
